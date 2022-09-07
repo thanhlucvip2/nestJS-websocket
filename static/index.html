@@ -8,11 +8,25 @@
   </head>
   <body>
     <div>
-      <ul id="messages"></ul>
+      <input
+        style="font-size: 20px"
+        type="text"
+        placeholder="Họ và tên"
+        id="name-data"
+      />
     </div>
     <div>
-      <input type="text" name="" id="message" />
-      <button onclick="onSubmit()">submit</button>
+      <ul id="messages" style="font-size: 20px"></ul>
+    </div>
+    <div>
+      <input
+        style="font-size: 20px"
+        type="text"
+        name=""
+        id="message"
+        onkeypress="return runScript(event)"
+      />
+      <!-- <button onsubmit="onSubmit()">submit</button> -->
     </div>
   </body>
   <script
